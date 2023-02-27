@@ -1,0 +1,21 @@
+name: Push Desktop File to GitHub
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Copy Desktop File
+        run: cp C:/Users/svelpuri/Desktop/prime.java https://github.com/steja6872/git-push-demo.git
+      - name: Commit Changes
+        run: |
+         
+          git add .
+          git commit -m "Add desktop file"
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+     
