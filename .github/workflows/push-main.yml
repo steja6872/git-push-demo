@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Copy Desktop File
-        run: cp C:/Users/svelpuri/Desktop/prime.java https://github.com/steja6872/git-push-demo.git
+        run: cp C:/Users/svelpuri/Desktop/prime.java git-push-demo/.github/workflows/push-main.yml
       - name: Commit Changes
         run: |
          
