@@ -11,4 +11,4 @@ jobs:
     - name: Compile Java file
       run: javac C:/Users/svelpuri/Desktop/prime.java
     - name: Run Java program
-      run: java -cp C:/Users/svelpuri/Desktop/ prime
+      run: java -cp C:/Users/svelpuri/Desktop/prime
