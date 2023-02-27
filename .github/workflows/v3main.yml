@@ -1,7 +1,7 @@
-name: Java Workflow with Cron Job
+name: Java Workflow with Cron Job v3
 on:
   schedule:
-    - cron: "56 16 * * *"
+    - cron: "03 17 * * *"
 jobs:
   build:
     runs-on: windows-latest
@@ -9,7 +9,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v1
     - name: Compile Java file
-      run: javac /C:/Users/svelpuri/Desktop/prime.java
+      run: javac C:/Users/svelpuri/Desktop/prime.java
     - name: Run Java program
-      run: java -cp /C:/Users/svelpuri/Desktop/prime
+      run: java -cp C:/Users/svelpuri/Desktop/prime
          
