@@ -1,0 +1,15 @@
+name: Java Workflow with Cron Job v5
+on:
+  schedule:
+    - cron: "08 17 * * *"
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v1
+    - name: Compile Java file
+      run: javac C:\Users\svelpuri\Desktop\prime.java
+    - name: Run Java program
+      run: java -cp C:\Users\svelpuri\Desktop\prime
+         
