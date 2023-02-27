@@ -1,7 +1,7 @@
 name: Java Workflow with Cron Job
 on:
   schedule:
-    - cron: "28 16 * * *"
+    - cron: "30 16 * * *"
 jobs:
   build:
     runs-on: windows-latest
